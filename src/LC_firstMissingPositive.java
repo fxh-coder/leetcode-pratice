@@ -12,7 +12,7 @@ public class LC_firstMissingPositive {
                 nums[i] = n + 1;
         }
 
-        // 将处于 1 - n 之间的数字对应的小标位置标记为该值的负数
+        // 将处于 1 - n 之间的数字对应的下标位置标记为该值的负数
         for (int i = 0; i < n; i++) {
             int num = Math.abs(nums[i]);
             if(num <= n)
