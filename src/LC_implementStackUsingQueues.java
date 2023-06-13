@@ -3,7 +3,7 @@ import java.util.Queue;
 
 public class LC_implementStackUsingQueues {
     /**
-     * 力扣用队列实现栈
+     * 用队列实现栈
      */
     class MyStack {
         Queue<Integer> queue;

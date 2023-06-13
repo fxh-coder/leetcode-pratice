@@ -3,7 +3,7 @@ import java.util.Deque;
 
 public class LC_implementQueueUsingStacks {
     /**
-     * 力扣用队列实现栈
+     * 力扣用栈实现队列
      */
     class MyQueue {
         Deque<Integer> inStack;
