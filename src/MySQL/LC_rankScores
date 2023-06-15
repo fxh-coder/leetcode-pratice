@@ -1,0 +1,7 @@
+// 力扣分数排名
+// 分数排序部分原理简单，rank部分是把重复的分数去除后，根据超过
+// 当前分数的个数来决定当前分数的排名的
+select a.Score,
+(select count(distinct b.Score) from Scores b where b.Score >= a.Score) as Score
+from Scores a
+order by Score desc
