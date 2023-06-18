@@ -2,7 +2,7 @@ package Java_Algorithm;
 
 public class LC_reverseVowelsOfAString {
     /**
-     * 力扣反转字符串中的元音字母
+     * 力扣反转字符串中的元音字母：双指针法：一个从前往后，一个从后往前
      * @param s
      * @return
      */
