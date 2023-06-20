@@ -1,0 +1,2 @@
+// offset是偏移的意思，就是按工资降序以后，偏移一个，也就到了第二个最高位（需要使用distinct将重复的工资去除，要不偏移也不对）
+select (select distinct salary from employee order by salary desc limit 1 offset 1) as 'SecondHighestSalary'

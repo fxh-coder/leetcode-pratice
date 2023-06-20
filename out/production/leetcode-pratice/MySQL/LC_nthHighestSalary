@@ -1,0 +1,18 @@
+// limit n, m 的意思是先偏移到n的下标位置，然后取 m 条数据
+// 所以这里先将n设为n-1，然后limit n, 1 也就获取到了第n高的薪水
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+    SET N := N-1;
+  RETURN (
+      # Write your MySQL query statement below.
+      SELECT
+            salary
+      FROM
+            employee
+      GROUP BY
+            salary
+      ORDER BY
+            salary DESC
+      LIMIT N, 1
+  );
+END
