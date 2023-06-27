@@ -1,3 +1,5 @@
+package Java_Algorithm.old;
+
 public class LC_wordSearch {
     /**
      * 力扣搜索单词
